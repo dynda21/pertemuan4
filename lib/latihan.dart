@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,14 +14,30 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Aplikasi Mahasiswa',
       debugShowCheckedModeBanner: false,
+
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.green,
+        ),
         useMaterial3: true,
       ),
+
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        useMaterial3: true,
+      ),
+
+      themeMode: ThemeMode.dark,
+
       home: Scaffold(
-        appBar: AppBar(title: const Text('Dashboard Mahasiswa')),
+        appBar: AppBar(
+          title: const Text('Dashboard Mahasiswa'),
+        ),
         body: const Center(
-          child: Text('Dinda', style: TextStyle(fontSize: 20)),
+          child: Text(
+            'Dinda',
+            style: TextStyle(fontSize: 20),
+          ),
         ),
       ),
     );
