@@ -5,7 +5,6 @@ void main() {
   runApp(const MyApp());
 }
 
-// stl
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -29,15 +28,35 @@ class MyApp extends StatelessWidget {
 
       themeMode: ThemeMode.dark,
 
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Dashboard Mahasiswa'),
-        ),
-        body: const Center(
-          child: Text(
-            'Dinda',
-            style: TextStyle(fontSize: 20),
-          ),
+      home: const ProfilePage(),
+    );
+  }
+}
+
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Dashboard Mahasiswa'),
+      ),
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.account_circle,
+              size: 80,
+            ),
+            SizedBox(height: 10),
+            Text(
+              'Dinda',
+              style: TextStyle(fontSize: 24),
+            ),
+            Text('Mahasiswa'),
+          ],
         ),
       ),
     );
