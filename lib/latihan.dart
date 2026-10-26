@@ -15,17 +15,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.green,
-        ),
+        primarySwatch: Colors.green,
         useMaterial3: true,
       ),
 
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-        useMaterial3: true,
-      ),
-
+      darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.dark,
 
       home: const ProfilePage(),
@@ -43,20 +37,9 @@ class ProfilePage extends StatelessWidget {
         title: const Text('Dashboard Mahasiswa'),
       ),
       body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.account_circle,
-              size: 80,
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Dinda',
-              style: TextStyle(fontSize: 24),
-            ),
-            Text('Mahasiswa'),
-          ],
+        child: Text(
+          'Dinda',
+          style: TextStyle(fontSize: 20),
         ),
       ),
     );
