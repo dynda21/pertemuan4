@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: Scaffold(
-        appBar: AppBar(title: const Text('Dinda aja dulu')),
+        appBar: AppBar(title: const Text('Dashboard Mahasiswa')),
         body: const Center(
           child: Text('Dinda', style: TextStyle(fontSize: 20)),
         ),
