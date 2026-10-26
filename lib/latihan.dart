@@ -4,24 +4,25 @@ void main() {
   runApp(const MyApp());
 }
 
-//stl
+// stl
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aplikasi Kampus',
+      title: 'Aplikasi Mahasiswa',
       debugShowCheckedModeBanner: false,
-      home: scaffold(
-        appBar: Appbar(
-          title: const Text('Dinda aja dulu'),
-        ),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+        useMaterial3: true,
+      ),
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Dinda aja dulu')),
         body: const Center(
-          child: Text('Halo Mahasiswa'),
+          child: Text('Dinda', style: TextStyle(fontSize: 20)),
         ),
       ),
     );
   }
 }
-
