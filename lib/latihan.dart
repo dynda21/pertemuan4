@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Aplikasi Mahasiswa',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
       home: Scaffold(
